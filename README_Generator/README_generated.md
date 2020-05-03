@@ -14,8 +14,7 @@ The generated README file is intended to be a template and will likely require s
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
+
 ## Installation
 
 To install the necessary dependencies, run npm i on the commnand line.
@@ -34,7 +33,7 @@ To test the project, run npm test on the command line.
 
 ## Questions
 
-If you have any questions please email me at christinamausley@gmail.com.
+If you have any questions, email me at christinamausley@gmail.com.
 
 ## Credits
 

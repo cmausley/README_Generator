@@ -11,22 +11,13 @@ The generated README file is intended to be a template and will likely require s
 
 *The original file is in [README_generated.md](README_generated.md)
 
-## How to use on command line:
-
-![How to run file](assets/node_README_Generator_short.gif)
-
-## What README file looks like:
-
-![README file](assets/generated_README.gif)
-
 ## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
+
 ## Installation
 
 To install the necessary dependencies, run npm i on the commnand line.

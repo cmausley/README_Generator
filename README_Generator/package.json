@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dan Weikart",
+  "author": "Christina Ausley",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
@@ -15,10 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thedanitor/README_Generator.git"
+    "url": "git+https://github.com/cmausley/README_Generator"
   },
-  "bugs": {
-    "url": "https://github.com/thedanitor/README_Generator/issues"
-  },
-  "homepage": "https://github.com/thedanitor/README_Generator#readme"
+  "homepage": "https://github.com/cmausley/README_Generator"
 }
