@@ -20,7 +20,7 @@ The generated README file is intended to be a template and will likely require s
 
 ## Installation
 
-To install the necessary dependencies, run npm i on the commnand line.
+To install the necessary dependencies, run npm on the command line.
 
 ## Usage
 
