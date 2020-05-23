@@ -8,10 +8,6 @@ function licenseBadge(data) {
     data.licenseType = "This project is licensed under the GNU GPLv3 license";
     data.badges =
       "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)";
-  } else if (data.license === "WTFPL") {
-    data.licenseType = "This project is licensed under the WTFPL license";
-    data.badges =
-      "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
   } else if (data.license === "Unlicense") {
     data.licenseType = "This project is licensed under the Unlicense license";
     data.badges =

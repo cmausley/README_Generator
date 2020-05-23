@@ -33,7 +33,7 @@ const questions = [
     type: "list",
     message: "What kind of license do you want your project to have?",
     name: "license",
-    choices: ["MIT", "GNU GPLv3", "WTFPL", "Unlicense", "None"],
+    choices: ["MIT", "GNU GPLv3", "Unlicense", "None"],
   },
   {
     type: "input",
@@ -69,7 +69,7 @@ function writeToFile(fileName, data) {
     if (err) {
       throw err;
     }
-    console.log("README created successfully!");
+    console.log("Good news! Your README was created successfully.");
   });
 }
 
