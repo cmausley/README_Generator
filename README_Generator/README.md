@@ -26,6 +26,12 @@ To test the project, run npm test on the command line.
 
 Watch a video of the deployed application here: https://youtu.be/VTmEvQjDLdc
 
+## Technologies
+
+JavaScript
+Node.js
+JSON
+
 ## Questions
 
 If you have any questions, email me at christinamausley@gmail.com.
