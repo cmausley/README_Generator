@@ -29,7 +29,6 @@ ${data.badges}
 ${data.url}
 
 ${data.description}
-The generated README file is intended to be a template and will likely require some additions specific to the repository.
 
 ## Table of Contents
 
@@ -39,6 +38,7 @@ The generated README file is intended to be a template and will likely require s
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
+
 ## Installation
 
 To install the necessary dependencies, run ${data.install} on the commnand line.
@@ -59,11 +59,13 @@ ${data.contribute}
 
 To test the project, run ${data.tests} on the command line.
 
+## Final Product
+
+A video demo of my project: ${data.product}
+
 ## Questions
 
-If you have any questions please email me at ${data.email}.
-
-<img src="${data.photo}" alt="Profile Photo" width="100px"/>
+If you have any questions please email me at ${data.contact}.
 
 ## Credits
 

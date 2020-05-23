@@ -1,4 +1,3 @@
-
 # README Generator
 
 This generator allows user to create a README.md file for their repo by answering questions on the command line.
@@ -25,7 +24,7 @@ To test the project, run npm test on the command line.
 
 ## Final Product
 
-Watch a video of the deployed application here: https://youtu.be/03UCfvg9ZBg 
+Watch a video of the deployed application here: https://youtu.be/VTmEvQjDLdc
 
 ## Questions
 
@@ -34,4 +33,5 @@ If you have any questions, email me at christinamausley@gmail.com.
 ## Credits
 
 Author Christina Ausley would like to thank UW Coding Bootcamp.
+
 

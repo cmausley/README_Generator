@@ -1,13 +1,13 @@
 const inquirer = require("inquirer");
+var fs = require("fs");
 var axios = require("axios");
 const generateMarkdown = require("./utils/generateMarkdown");
-var fs = require("fs");
 
 const questions = [
   {
     type: "input",
     name: "title",
-    message: "What is the name of your project?",
+    message: "What is the title of your project?",
   },
   {
     type: "input",
@@ -16,8 +16,13 @@ const questions = [
   },
   {
     type: "input",
+    name: "install",
+    message: "How do you install the project?",
+  },
+  {
+    type: "input",
     name: "description",
-    message: "Write a brief description of the project.",
+    message: "Write a description of your project.",
   },
   {
     type: "input",
@@ -26,41 +31,41 @@ const questions = [
   },
   {
     type: "input",
-    name: "email",
-    message: "What is your email?",
+    name: "contact",
+    message: "What is your contact information or email?",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "How do you use this project?",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "How do you test this project?",
+    default: "npm test",
+  },
+  {
+    type: "input",
+    name: "product",
+    message: "Paste a link to a video demo of your project.",
+    default: "Video demo coming soon."
+  },
+  {
+    type: "input",
+    name: "contribute",
+    message: "What are the project contributors?",
+  },
+  {
+    type: "input",
+    name: "credits",
+    message: "Who or what would you like to acknowledge?",
   },
   {
     type: "list",
     message: "What kind of license do you want your project to have?",
     name: "license",
     choices: ["MIT", "GNU GPLv3", "Unlicense", "None"],
-  },
-  {
-    type: "input",
-    name: "usage",
-    message: "How does the user use this project?",
-  },
-  {
-    type: "input",
-    name: "install",
-    message: "What commands would the user need to intall this project?",
-    default: "npm i",
-  },
-  {
-    type: "input",
-    name: "tests",
-    message: "How would the user test this project?",
-    default: "npm test",
-  },
-  {
-    type: "input",
-    name: "contribute",
-    message: "How would the user contribute to this project?",
-  },
-  {
-    type: "input",
-    name: "credits",
-    message: "Enter any acknowledgements here.",
   },
 ];
 
@@ -69,7 +74,7 @@ function writeToFile(fileName, data) {
     if (err) {
       throw err;
     }
-    console.log("Good news! Your README was created successfully.");
+    console.log("Good news! Your README was generated.");
   });
 }
 
@@ -84,12 +89,18 @@ function init() {
       .get(queryUrl)
       .then(function (response) {
         data.photo = response.data.avatar_url;
+        
         console.log(`Combined inputs`, data);
+        
         const markdown = generateMarkdown(data);
         writeToFile("README.md", markdown);
       })
+
+
       .catch((err) => {
         console.log("Github user not found");
+
+        
       });
   });
 }
